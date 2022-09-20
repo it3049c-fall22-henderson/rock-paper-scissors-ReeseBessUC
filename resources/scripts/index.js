@@ -1,7 +1,7 @@
 // Elements
 const welcomeScreen = document.getElementById(`welcome-screen`);
 const gameScreen = ;
-const startGameButton = ;
+const startGameButton = game = new RockPaperScissors(username);;
 const userName = ;
 const userSelection = ;
 const goButton = ;
