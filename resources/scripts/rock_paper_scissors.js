@@ -14,7 +14,12 @@ class RockPaperScissors {
    */
   generateCPUResponse(){
     const acceptedValues = [ `rock`, `paper`, `scissors` ];
-
+      function getRandomInt(rock, paper, scissors) {
+        rock = Math.ceil(0);
+        paper = Math.floor(1);
+        scissors = Math.floor(2);
+      return Math.floor(Math.random() ,acceptedValue); // The maximum is exclusive and the minimum is inclusive
+    }
     return ;
   }
   /**
