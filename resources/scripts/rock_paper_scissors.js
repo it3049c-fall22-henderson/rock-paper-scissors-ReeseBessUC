@@ -39,19 +39,19 @@ class RockPaperScissors {
    */
   determineWinner(userSelection, cpuSelection){
     if (cpuSelection = scissors && (userSelection = rock)) {
-      value = "Win!"
+      value = "Win!";
     } else if (cpuSelection = rock && (userSelection = paper)){
-      value = "Win!"
+      value = "Win!";
     } else if (cpuSelection = paper && (userSelection = scissors)){
-      value = "Win!"
+      value = "Win!";
     } else if (cpuSelection = userSelection){
-      value = "Tie!"
+      value = "Tie!";
     } else if (cpuSelection = rock && (userSelection = scissors)){
-      value = "Lose!"
+      value = "Lose!";
     } else if (cpuSelection = paper && (userSelection = rock)){
-      value = "Lose!"
-    } else (cpuSelection = scissors && (userSelection = paper)){
-      value = "Lose!"
+      value = "Lose!";
+    } else if (cpuSelection = scissors && (userSelection = paper)){
+      value = "Lose!";
     }
 
   }
@@ -61,7 +61,11 @@ class RockPaperScissors {
    * @param {string} userSelection user selection. Can only be one of the following values [`rock`, `paper`, `scissors`]
    */
   play(userSelection){
-
+        // if the user won the round
+        this.score.user ++;
+        // if the user cpu the round
+        this.score.cpu ++;
+        this.gameHistoryLog.push(username + 'selected' + acceptedValues, 'CPU selected' + acceptedValues + ':' + username + value);
   }
 
 }
